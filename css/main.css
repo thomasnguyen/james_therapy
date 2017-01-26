@@ -83,7 +83,7 @@ nav > a{
 }
 
 .mobile-screen > a{
-	padding:15px;
+	padding:0px;
 	color:white;
 	text-decoration: none;
 	font-size: 24px
@@ -234,7 +234,7 @@ footer{
 .content__title__inner {
 	flex: none;
 	display: inline-block;
-	white-space: nowrap;
+	white-space: wrap;
 	position: relative;
 }
 
@@ -263,3 +263,21 @@ footer{
 		display: block;
 	}
 }
+
+@media (max-width: 450px){
+	.hero, .hero-text > p, .hero-text, {
+		width:100%;
+		box-sizing: border-box;
+	}
+
+	.hero{
+		background-position-x:-205%; 
+	}
+	.hero-text > p{
+		width:300px;
+		line-height: 1.5;
+		font-size: 24px;
+	}
+}
+
+
