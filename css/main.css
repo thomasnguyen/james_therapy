@@ -49,6 +49,46 @@ nav > a{
 	padding-right:3px;
 }
 
+.window-close{
+	position: absolute;
+	top:30px;
+	right:30px;
+	color:white;
+	font-size: 24px;
+}
+
+.nav-mobile{
+	display: none;
+}
+
+.nav-mobile_fullscreen{
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0,.8);
+	z-index: 5;
+	width: 100%;
+	height:100%;
+
+}
+
+.fa-bars:hover, .fa-window-close{
+	cursor: pointer;;
+}
+
+.mobile-screen{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.mobile-screen > a{
+	padding:15px;
+	color:white;
+	text-decoration: none;
+	font-size: 24px
+}
+
 .hero-text > p{
 	padding-top:80px;
 	width:400px;
@@ -210,8 +250,16 @@ footer{
 }
 
 @media (max-width: 900px){
-
 	.img{
 		flex:1;
+	}
+}
+
+@media (max-width: 650px){
+	nav{
+		display: none;
+	}
+	.nav-mobile{
+		display: block;
 	}
 }
